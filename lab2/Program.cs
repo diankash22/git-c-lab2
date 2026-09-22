@@ -305,6 +305,12 @@ namespace GeneticSearch
             if (args.Length >= 4)
                 authorName = args[3];
 
+            Console.WriteLine("=== GENETIC SEARCH ===");
+            Console.WriteLine($"Input sequences: {sequencesFile}");
+            Console.WriteLine($"Input commands: {commandsFile}");
+            Console.WriteLine($"Output file: {outputFile}");
+            Console.WriteLine();
+            
             List<Protein> data = ReadData("sequences.0.txt");
             PrintData(data);
 
